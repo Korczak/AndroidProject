@@ -3,6 +3,7 @@ package com.skorczynski.aplikacja.kalkulator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final int duration = Toast.LENGTH_LONG;
     private Button btnExit;
     private TextView historyStateText;
-    private Context context;
 
     private String inputText = "";
     private String outputText = "";
