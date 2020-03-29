@@ -1,26 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".kalkulator.MainActivity">
-    <include
-        layout="@layout/input"
+    tools:context="MainActivity"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple app with intents"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="20sp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Contacts"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="SMS"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Map"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btnCustom"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Custom"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tvChosedName"
+        android:layout_marginTop="10sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:gravity="bottom"
-        android:background="@color/colorPrimaryDark"
-        android:layout_height="match_parent">
 
-
-        <include
-            layout="@layout/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
 </LinearLayout>
